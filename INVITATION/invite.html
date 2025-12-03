@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>You’re Invited</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #ffc9d9, #ffeef3);
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    .heart {
+      font-size: 50px;
+      text-align: center;
+      animation: float 2s infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    h1 {
+      text-align: center;
+      color: #d6336c;
+      font-size: 28px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      background: #d6336c;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    /* Falling hearts animation */
+    .falling-heart {
+      position: fixed;
+      top: -10%;
+      font-size: 22px;
+      color: #ff4d79;
+      animation: falling 6s linear infinite;
+    }
+    @keyframes falling {
+      0% { transform: translateY(-10vh) translateX(0); opacity: 0; }
+      20% { opacity: 1; }
+      100% { transform: translateY(110vh) translateX(20px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart">💖</div>
+
+  <h1>You’re Invited</h1>
+
+  <div class="card">
+    <p><b>To:</b> Jenie Anatasia</p>
+    <p><b>Day:</b> Rabu, 3 Desember 2025</p>
+    <p><b>Time:</b> after office</p>
+    <p><b>Place:</b> our favorite place</p>
+    <a class="btn" href="https://wa.me/+6282227863011?text=Halo%2C%20aku%20konfirmasi%20hadir%20untuk%20date." target="_blank">RSVP</a>
+  </div>
+
+  <!-- Falling hearts -->
+  <div class="falling-heart" style="left:10%;">💗</div>
+  <div class="falling-heart" style="left:30%; animation-delay:1s;">💖</div>
+  <div class="falling-heart" style="left:50%; animation-delay:2s;">💕</div>
+  <div class="falling-heart" style="left:70%; animation-delay:3s;">💘</div>
+  <div class="falling-heart" style="left:90%; animation-delay:0.5s;">💞</div>
+
+  <!-- Embed YouTube Daylight -->
+  <div style="margin-top: 30px; text-align:center;">
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/HkAB1Gavw1Y?autoplay=1&loop=1&playlist=HkAB1Gavw1Y"
+      title="YouTube video player" frameborder="0"
+      allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
